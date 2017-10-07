@@ -20,31 +20,29 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-ao-viU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUt-8y-0JI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdm-IJ-vBD">
                                 <rect key="frame" x="154.5" y="602" width="65" height="45"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="A2D-s7-Bwj"/>
-                                    <constraint firstAttribute="width" constant="65" id="UNo-aC-kzD"/>
+                                    <constraint firstAttribute="width" constant="65" id="T7T-RV-bhL"/>
+                                    <constraint firstAttribute="height" constant="45" id="uCH-0p-ZkT"/>
                                 </constraints>
                                 <state key="normal" title="Draw"/>
-                                <connections>
-                                    <action selector="draw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8r-AL-X2J"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4Lg-ao-viU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Ex-3D-hPr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wdm-IJ-vBD" secondAttribute="bottom" constant="20" id="P6i-WI-6dF"/>
                             <constraint firstItem="4Lg-ao-viU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S9R-XH-Boh"/>
                             <constraint firstItem="4Lg-ao-viU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZMR-Em-1qH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uUt-8y-0JI" secondAttribute="bottom" constant="20" id="m3V-dJ-lUZ"/>
-                            <constraint firstItem="uUt-8y-0JI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nB2-M0-hTa"/>
+                            <constraint firstItem="wdm-IJ-vBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsz-ac-pbn"/>
                             <constraint firstItem="4Lg-ao-viU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="q3I-Jk-8Py"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="draw" destination="wdm-IJ-vBD" id="9xw-in-Hvn"/>
                         <outlet property="sceneView" destination="4Lg-ao-viU" id="cmP-a3-qHw"/>
                     </connections>
                 </viewController>
